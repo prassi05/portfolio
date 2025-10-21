@@ -1,0 +1,453 @@
+/* ===============================
+   GENERAL RESET & BODY STYLING
+================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #E5E7EB; /* light gray background */
+  color: #111827;
+  padding: 20px;
+}
+
+/* ===============================
+   HERO SECTION (BIGGER PROFILE)
+================================= */
+.hero {
+  text-align: center;
+  padding: 80px 20px; /* more space */
+  background-color: #1F2937;
+  color: #F9FAFB;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.profile-pic {
+  width: 180px;   /* bigger size */
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #3B82F6;
+  display: block;
+  margin: 0 auto 20px;
+  object-fit: cover;
+}
+
+.hero h1 {
+  font-size: 36px;  /* bigger text */
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;  /* slightly bigger */
+  margin-bottom: 25px;
+  color: #CBD5E1;
+}
+
+.hero .btn {
+  background-color: #3B82F6;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.hero .btn:hover {
+  background-color: #2563EB;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 15px;
+  }
+
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+/* ===============================
+   NAVIGATION BAR (CENTERED LINKS)
+================================= */
+header nav {
+  display: flex;
+  justify-content: center;  /* center links horizontally */
+  align-items: center;
+  gap: 40px;                /* space between links */
+  background-color: #1E3A8A; /* deep navy blue */
+  padding: 15px 0;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+header nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s, transform 0.2s;
+}
+
+header nav a:hover {
+  color: #F97316;           /* coral hover */
+  transform: scale(1.05);   /* subtle zoom on hover */
+  
+}
+
+/* Mobile nav adjustment */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  header nav a {
+    font-size: 18px;
+  }
+}
+
+/* ===============================
+   ABOUT SECTION
+================================= */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  color: #1F2937;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4B5563;
+  margin-bottom: 15px;
+}
+
+/* Resume Button */
+.resume-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3B82F6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.resume-btn:hover {
+  background-color: #2563EB;
+}
+
+/* Profile Image */
+.about-image img {
+  width: 220px;          /* adjust size */
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;    /* circular photo */
+  border: 3px solid #3B82F6;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    margin: 20px 0 0 0;
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* ===============================
+   SKILLS SECTION
+================================= */
+section#skills {
+  background-color: #F9FAFB;
+  padding: 50px 30px;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+section#skills h2 {
+  color: #1F2937;
+  font-size: 26px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill-category {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.skill-category h3 {
+  text-align: center;
+  color: #3B82F6;
+  margin-bottom: 15px;
+}
+
+.skill-category li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #4B5563;
+}
+
+@media (max-width: 768px) {
+  .skills-container,
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-category,
+  .project-card {
+    width: 90%;
+  }
+}
+
+
+/* ===============================
+   PROJECTS SECTION
+================================= */
+section#projects {
+  padding: 50px 30px;
+}
+
+section#projects h2 {
+  text-align: center;
+  color: #1F2937;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #FFFFFF;
+  padding: 20px;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+  color: #3B82F6;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #4B5563;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #1F2937;
+  font-weight: 500;
+}
+
+.project-card a:hover {
+  color: #3B82F6;
+}
+
+@media (max-width: 768px) {
+  section#contact form {
+    width: 90%;
+  }
+
+  .back-home .btn {
+    width: 80%;
+  }
+}
+
+/* ===============================
+   TESTIMONIALS SECTION
+================================= */
+section#testimonials {
+  background-color: #F9FAFB;
+  padding: 50px 30px;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+section#testimonials h2 {
+  text-align: center;
+  color: #1F2937;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.testimonial-card {
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  font-style: italic;
+  color: #4B5563;
+  text-align: center;
+}
+/* ===============================
+   CONTACT SECTION
+================================= */
+section#contact {
+  background-color: #FFFFFF;
+  padding: 50px 30px;
+  border-radius: 12px;
+  margin: 30px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+section#contact h2 {
+  text-align: center;
+  color: #1F2937;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+section#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+}
+
+section#contact input,
+section#contact textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #CBD5E1;
+  font-size: 14px;
+}
+
+section#contact textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+section#contact button {
+  background-color: #3B82F6;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+section#contact button:hover {
+  background-color: #2563EB;
+}
+
+section#contact a {
+  color: #3B82F6;
+  text-decoration: none;
+}
+
+section#contact a:hover {
+  text-decoration: underline;
+}
+
+
+/* =======================
+   Back to Home Button
+======================= */
+.back-home {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.back-home .btn {
+  display: inline-block;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.back-home .btn:hover {
+  background-color: #1e40af;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #111827;
+  color: #F9FAFB;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #3B82F6;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
