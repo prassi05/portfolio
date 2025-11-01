@@ -1,6 +1,6 @@
 # My Portfolio Website 🌐
 
-![Portfolio Screenshot](images/portfolio-screenshot.png)
+![Portfolio Screenshot](./portfolio.png)
 
 ## 👋 About Me
 Hi! I'm Prassitha C, a passionate web developer.  
@@ -23,12 +23,14 @@ This is my personal portfolio website showcasing my **skills, projects, and cont
 3. **Weather App** – Shows weather updates using API *(coming soon)*  
 
 ## 📄 Resume
-[Click here to view my resume](Prassitha_Codandaraman_Resume.pdf)
+[Click here to view my resume](./Prassitha_Codandaraman_Resume.pdf)
 
 ## 🚀 Live Demo
-👉 [View Live Portfolio](https://prassi05.github.io/portfolio)
+![Website Demo](./demo.gif)
+
 
 ## 📥 How to Run Locally
 1. Clone this repository:  
    ```bash
    git clone https://github.com/prassi05/portfolio.git
+
